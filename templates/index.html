@@ -1,0 +1,17 @@
+<html>
+<body>
+
+<p>
+
+{% for carId, carValues  in data.items() %}
+<p><a href="./info/{{carId}}"> <!-- Add url encode / checks later -->
+{{carValues['make']}} - {{carValues['model']}}
+</a>
+</p>
+
+{% endfor %}
+
+</p>
+
+</body>
+</html>
